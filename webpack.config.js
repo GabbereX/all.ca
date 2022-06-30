@@ -3,7 +3,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = env => ({
   context: path.resolve(__dirname, 'src'),
@@ -18,21 +17,15 @@ module.exports = env => ({
     assetModuleFilename: './assets/[name]_[contenthash][ext]',
   },
 
+  // resolve: {
+  //   modules: ['./', 'node_modules'],
+  // },
+
   module: {
     rules: [
       {
         test: /\.html$/,
         use: 'html-loader',
-      },
-
-      {
-        test: /\.svg$/,
-        loader: 'svg-sprite-loader',
-      },
-
-      {
-        test: /\.(png|jpg|jpeg|gif|woff2?)$/i,
-        type: 'asset/resource',
       },
 
       {
@@ -43,6 +36,11 @@ module.exports = env => ({
           'postcss-loader',
           'sass-loader',
         ],
+      },
+
+      {
+        test: /\.(png|jpg|jpeg|webp|svg|gif|woff2?)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -72,8 +70,6 @@ module.exports = env => ({
         },
       },
     }),
-
-    new SpriteLoaderPlugin(),
   ],
 
   devtool: !env.prod && 'source-map',
