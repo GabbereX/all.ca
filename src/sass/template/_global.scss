@@ -29,3 +29,19 @@
     box-shadow: 0 -2px rgba(0, 0, 0, 0.05);
   }
 }
+
+.close-button {
+  fill: var(--gray-dark);
+  transition: fill 0.3s ease;
+  &:hover,
+  &:active {
+    fill: var(--green);
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}

@@ -52,7 +52,12 @@ module.exports = env => ({
     new CleanWebpackPlugin(),
 
     new HTMLWebpackPlugin({
-      template: './index.html',
+      filename: 'index.html',
+      template: path.resolve(__dirname, './src/index.html'),
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'coming-soon.html',
+      template: path.resolve(__dirname, './src/coming-soon.html'),
     }),
 
     new MiniCssExtractPlugin({
