@@ -1,0 +1,100 @@
+.domain-name {
+  margin-bottom: 146px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: var(--gray-medium);
+  }
+
+  &__description {
+    margin-bottom: 47px;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--gray-medium);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 30px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  &__item {
+    height: 140px;
+    border: 1px solid var(--gray-light-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.5s ease;
+    &:hover {
+      border-color: var(--green);
+      box-shadow: 0 -4px 0px -4px rgba(0, 0, 0, 0.05);
+    }
+    &-url {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 100%;
+      color: var(--black);
+    }
+    &-zone {
+      margin-bottom: 8px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    &-price {
+      font-size: 22px;
+      line-height: 22px;
+    }
+    &-lable {
+      padding: 6px 5px 5px 5px;
+      position: absolute;
+      top: 12px;
+      width: 76px;
+      font-size: 10px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--green);
+      border-radius: 3px;
+    }
+  }
+
+  &__view-more-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--blue);
+    transition: color 0.3s ease;
+    & > svg {
+      position: relative;
+      top: 3px;
+      left: 4px;
+      fill: var(--blue);
+      transition: fill 0.3s ease;
+    }
+    &:hover, &:hover > svg {
+      color: var(--green);
+      fill: var(--green);
+    }
+    &:active, &:active > svg {
+      color: var(--red-dark);
+      fill: var(--red-dark);
+    }
+  }
+}

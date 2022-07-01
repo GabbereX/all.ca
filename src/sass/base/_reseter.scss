@@ -222,3 +222,44 @@ button {
 img {
   max-width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+input {
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &:focus {
+    &::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &::-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &:-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}

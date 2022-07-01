@@ -1,0 +1,43 @@
+.about-us {
+  margin-bottom: 100px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 78px;
+    text-align: center;
+    color: var(--red-dark)
+  }
+
+  &__description {
+    margin-bottom: 100px;
+    width: 540px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 30px;
+  }
+  &__item {
+    &-title {
+      margin-bottom: 7px;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 33px;
+      color: var(--gray-medium);
+    }
+    &-description {
+      line-height: 27px;
+    }
+  }
+}

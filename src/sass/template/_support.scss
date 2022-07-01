@@ -1,0 +1,28 @@
+.support {
+  margin-bottom: 175px;
+  height: 543px;
+  background: url('@images/support-bg.webp') no-repeat right;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__content {
+    width: 423px;
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    color: var(--gray-medium);
+  }
+
+  &__description {
+    line-height: 27px;
+  }
+}

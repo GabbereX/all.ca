@@ -17,9 +17,12 @@ module.exports = env => ({
     assetModuleFilename: './assets/[name]_[contenthash][ext]',
   },
 
-  // resolve: {
-  //   modules: ['./', 'node_modules'],
-  // },
+  resolve: {
+    extensions: ['.js', '.jpg', '.scss'],
+    alias: {
+      '@images': path.resolve(__dirname, './src/assets/images/'),
+    },
+  },
 
   module: {
     rules: [
