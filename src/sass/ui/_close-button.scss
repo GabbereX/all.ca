@@ -1,0 +1,8 @@
+.close-button {
+  fill: var(--gray-dark);
+  transition: fill 0.3s ease;
+  &:hover,
+  &:active {
+    fill: var(--green);
+  }
+}

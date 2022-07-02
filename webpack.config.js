@@ -57,7 +57,15 @@ module.exports = env => ({
     }),
     new HTMLWebpackPlugin({
       filename: 'coming-soon.html',
-      template: path.resolve(__dirname, './src/coming-soon.html'),
+      template: path.resolve(__dirname, './src/pages/coming-soon.html'),
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'tld.html',
+      template: path.resolve(__dirname, './src/pages/tld.html'),
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'transfers.html',
+      template: path.resolve(__dirname, './src/pages/transfers.html'),
     }),
 
     new MiniCssExtractPlugin({

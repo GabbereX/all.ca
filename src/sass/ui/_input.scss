@@ -1,9 +1,3 @@
-.container {
-  margin: 0 auto;
-  padding: 0 50px;
-  max-width: 1210px;
-}
-
 .input {
   padding: 22px 16px;
   height: 60px;
@@ -28,20 +22,4 @@
   &:hover {
     box-shadow: 0 -2px rgba(0, 0, 0, 0.05);
   }
-}
-
-.close-button {
-  fill: var(--gray-dark);
-  transition: fill 0.3s ease;
-  &:hover,
-  &:active {
-    fill: var(--green);
-  }
-}
-
-.body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
 }

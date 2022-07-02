@@ -1,0 +1,11 @@
+@media all and (max-width: 1105px) {
+  .footer {
+    &__top {
+      &-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}

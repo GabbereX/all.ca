@@ -1,0 +1,44 @@
+@media all and (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+  .background-position {
+    background-position: top left calc(10% + 425px);
+  }
+  .hero {
+    &__title {
+      font-size: 56px;
+      line-height: 66px;
+    }
+    &__description {
+      width: 355px;
+    }
+    &__form {
+      &-title {
+        font-size: 34px;
+      }
+      &-input {
+        width: 388px;
+      }
+    }
+    &__slogan {
+      font-size: 26px;
+    }
+  }
+  .support {
+    &__content {
+      width: 355px;
+    }
+  }
+  .transfers {
+    &__info {
+      max-width: 311px;
+    }
+    &__form {
+      width: 70%;
+    }
+    &__textarea {
+      width: 100%;
+    }
+  }
+}

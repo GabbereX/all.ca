@@ -1,0 +1,98 @@
+@media all and (max-width: 420px) {
+  html {
+    font-size: 14px;
+  }
+  .header {
+    &__logo {
+      &-image {
+        width: 75px;
+      }
+    }
+    &__auth-button {
+      position: relative;
+      bottom: 3px;
+      padding: 7px 6px;
+      font-size: 12px;
+    }
+  }
+  .hero {
+    &__title {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    &__description {
+      width: auto;
+    }
+    &__form {
+      width: 100%;
+      &-title {
+        font-size: 18px;
+      }
+      &-input {
+        height: 40px;
+        width: 100%;
+        font-size: 18px;
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+      &-button {
+        padding: 10px 22px;
+      }
+    }
+
+    &--tld {
+      &__links {
+        & > a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .domain-name {
+    &__title {
+      font-size: 25px;
+      line-height: 34px;
+    }
+    &__description {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .about-us {
+    &__list {
+      display: block;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .support {
+    &__content {
+      width: auto;
+      & > a {
+        font-size: 12px;
+        & > svg {
+          top: 0;
+          left: 5px;
+        }
+      }
+    }
+
+
+  }
+  .footer {
+    &__top {
+      &-contacts {
+        &-title {
+          font-size: 20px;
+        }
+        &-tel {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

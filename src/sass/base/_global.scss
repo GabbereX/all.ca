@@ -1,0 +1,16 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1210px;
+}
+
+.main {
+  background: var(--gray-light-background);
+}

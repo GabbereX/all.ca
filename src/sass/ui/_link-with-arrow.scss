@@ -1,0 +1,24 @@
+.link-with-arrow {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--blue);
+  transition: color 0.3s ease;
+  & > svg {
+    position: relative;
+    top: 3px;
+    left: 4px;
+    fill: var(--blue);
+    transition: fill 0.3s ease;
+  }
+  &:hover,
+  &:hover > svg {
+    color: var(--green);
+    fill: var(--green);
+  }
+  &:active,
+  &:active > svg {
+    color: var(--red-dark);
+    fill: var(--red-dark);
+  }
+}

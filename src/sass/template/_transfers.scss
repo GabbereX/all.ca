@@ -1,0 +1,49 @@
+.transfers {
+  margin-bottom: 40px;
+  padding: 75px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    margin-right: 30px;
+    max-width: 460px;
+    color: var(--gray-dark-input);
+    &-title {
+      margin-bottom: 16px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+      color: var(--red-dark);
+    }
+    &-description {
+      font-size: 16px;
+      line-height: 24px;
+      &:first-child {
+        margin-bottom: 24px;
+      }
+      &-main {
+        margin-bottom: 24px;
+        font-size: 28px;
+        line-height: 42px;
+      }
+    }
+
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__textarea {
+    margin-bottom: 19px;
+    padding: 18px 24px;
+    width: 540px;
+    min-height: 288px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+}

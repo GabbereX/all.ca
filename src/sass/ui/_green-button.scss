@@ -1,0 +1,20 @@
+.green-button {
+  display: block;
+  margin-left: auto;
+  padding: 18px 43px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--green-lime);
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  &:hover {
+    background: var(--red-dark);
+  }
+  &:active {
+    background: var(--green);
+  }
+}
