@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "author": "Alex Gabber",
   "private": true,
+  "homepage": "https://gabberex.github.io/all.ca",
   "scripts": {
     "build": "webpack --mode=production --env prod",
-    "start": "webpack-dev-server --mode=development"
+    "start": "webpack-dev-server --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
@@ -14,6 +17,7 @@
     "css-loader": "^6.7.1",
     "favicons": "^6.2.2",
     "favicons-webpack-plugin": "^5.0.2",
+    "gh-pages": "^4.0.0",
     "html-loader": "^3.1.2",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
